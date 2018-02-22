@@ -6,13 +6,13 @@ function init() {
   document.addEventListener("keydown", codeCheck);
   
   function codeCheck(e) {
-  const key = parseInt(e.detail || e.which);
+  const key = parseInt(e.which);
 
   if (key === code[index]) {
     index++;
 
     if (index === code.length) {
-      window.alert("Hooray!");
+      window.alert("Konami!");
 
       index = 0;
     }
